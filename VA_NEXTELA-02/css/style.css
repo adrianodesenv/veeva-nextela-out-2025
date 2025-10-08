@@ -88,13 +88,14 @@ img,
   width: 285px;
   height: 60px;
 }
-a,
+/* a,
 button {
   border: solid 1px red;
-}
+} */
 
 button {
   background: none;
+  border: none;
   position: absolute;
 }
 
