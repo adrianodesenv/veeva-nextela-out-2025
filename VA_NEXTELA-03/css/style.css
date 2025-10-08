@@ -1,0 +1,102 @@
+* {
+  margin: 0 auto;
+}
+
+#bg,
+#section {
+  -webkit-transform: translate(-50%, -50%) scale(1) translate(50%, 50%);
+  transform: translate(-50%, -50%) scale(1) translate(50%, 50%);
+}
+
+#bg,
+img,
+#bg > video,
+.popup,
+#section {
+  width: 1194px;
+  height: 896px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.slides {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: none;
+  width: 1194px;
+  height: 896px;
+}
+
+.slides.show {
+  display: block;
+}
+
+#bg {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#section {
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.btn {
+  position: absolute;
+}
+
+#btn-home,
+#bt-close-popup {
+  width: 60px;
+  position: absolute;
+  right: 43px;
+  height: 60px;
+  top: 45px;
+}
+#btn-bula {
+  width: 60px;
+  position: absolute;
+  right: 115px;
+  height: 60px;
+  top: 45px;
+}
+
+#btn-open-bom-sangramento {
+  left: 46px;
+  bottom: 39px;
+  width: 252px;
+  height: 60px;
+}
+#btn-open-segure {
+  left: 317px;
+  bottom: 39px;
+  width: 242px;
+  height: 60px;
+}
+#btn-open-impacto {
+  left: 576px;
+  bottom: 39px;
+  width: 226px;
+  height: 60px;
+}
+
+button {
+  background: none;
+  border: none;
+  position: absolute;
+}
+
+/* a,
+button {
+  border: solid 1px red;
+} */
+
+#box-interaction.show {
+  display: block;
+}
+#box-interaction {
+  display: none;
+}
