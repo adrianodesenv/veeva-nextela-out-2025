@@ -1,0 +1,106 @@
+* {
+  margin: 0 auto;
+}
+
+#bg,
+#section {
+  -webkit-transform: translate(-50%, -50%) scale(1) translate(50%, 50%);
+  transform: translate(-50%, -50%) scale(1) translate(50%, 50%);
+}
+
+#bg,
+img,
+#bg > video,
+.popup,
+#section {
+  width: 1194px;
+  height: 896px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.slides {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: none;
+  width: 1194px;
+  height: 896px;
+}
+
+.slides.show {
+  display: block;
+}
+
+#bg {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#section {
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.btn {
+  position: absolute;
+}
+
+#btn-home,
+#bt-close-popup {
+  width: 60px;
+  position: absolute;
+  right: 43px;
+  height: 60px;
+  top: 45px;
+}
+#btn-bula {
+  width: 60px;
+  position: absolute;
+  right: 115px;
+  height: 60px;
+  top: 45px;
+}
+
+#btn-open-eficacia {
+  left: 49px;
+  bottom: 54px;
+  width: 115px;
+  height: 60px;
+}
+#btn-open-bom-sangramento {
+  left: 176px;
+  bottom: 54px;
+  width: 252px;
+  height: 60px;
+}
+#btn-open-melhora-sintomas {
+  left: 436px;
+  bottom: 54px;
+  width: 414px;
+  height: 60px;
+}
+#btn-open-menor-impacto {
+  right: 49px;
+  bottom: 54px;
+  width: 285px;
+  height: 60px;
+}
+a,
+button {
+  border: solid 1px red;
+}
+
+button {
+  background: none;
+  position: absolute;
+}
+
+#box-interaction.show {
+  display: block;
+}
+#box-interaction {
+  display: none;
+}

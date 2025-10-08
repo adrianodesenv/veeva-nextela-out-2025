@@ -1,0 +1,69 @@
+5<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script type="text/javascript" src="js/veeva-library.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <title>NEXTELA 02</title>
+  </head>
+  <body>
+    <section id="section">
+      <div class="slides show" id="inicio">
+        <img id="img-bg" src="images/02.png" />
+      </div>
+
+      <div class="slides" id="eficacia">
+        <img id="img-bg" src="images/popup-1.png" />
+      </div>
+
+      <div class="slides" id="sangramento">
+        <img id="img-bg" src="images/popup-2.png" />
+      </div>
+
+      <div class="slides" id="sintomas">
+        <img id="img-bg" src="images/popup-3.png" />
+      </div>
+      <button id="bt-close-popup"></button>
+
+      <div id="box-interaction" class="show">
+        <a
+          href="veeva:gotoSlide(VA_NEXTELA-01.zip)"
+          class="btn"
+          id="btn-home"
+        ></a>
+        <a
+          href="veeva:gotoSlide(VA_NEXTELA-05.zip)"
+          class="btn"
+          id="btn-bula"
+        ></a>
+
+        <button
+          id="btn-open-eficacia"
+          class="bt-popup"
+          data-popup="#eficacia"
+        ></button>
+        <button
+          id="btn-open-bom-sangramento"
+          class="bt-popup"
+          data-popup="#sangramento"
+        ></button>
+        <button
+          id="btn-open-melhora-sintomas"
+          class="bt-popup"
+          data-popup="#sintomas"
+        ></button>
+        <button id="btn-open-menor-impacto"></button>
+      </div>
+    </section>
+  </body>
+</html>
