@@ -33,6 +33,14 @@
       <div class="slides" id="sintomas">
         <img id="img-bg" src="images/popup-3.png" />
       </div>
+
+      <div class="slides" id="video-slide">
+        <video id="myVideo" width="100%" height="100%" controls preload="none">
+          <source src="videos/mecanismo.mp4" type="video/mp4" />
+        </video>
+        <button id="bt-close-video"></button>
+      </div>
+
       <button id="bt-close-popup"></button>
 
       <div id="box-interaction" class="show">
@@ -62,12 +70,7 @@
           class="bt-popup"
           data-popup="#sintomas"
         ></button>
-        <button id="btn-open-menor-impacto"></button>
-        <a
-          href="https://libbs-promomats.veevavault.com/ui/#doc_info/62010/0/1"
-          class="btn"
-          id="btn-open-menor-impacto"
-        ></a>
+        <button id="btn-open-menor-impacto" onclick="playVideo()"></button>
       </div>
     </section>
   </body>

@@ -49,6 +49,18 @@ $(document).ready(() => {
     $("#box-interaction").addClass("show");
   });
 
+  $("#bt-close-video").click(function (e) {
+    const video = document.getElementById("myVideo");
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
+
+    $(".slides").removeClass("show");
+    $("#inicio").addClass("show");
+    $("#box-interaction").addClass("show");
+  });
+
   $(".btn-close-slide").click(function (e) {
     var a = historico[historico.length - 1];
     var p = $(this).parent();
@@ -86,3 +98,30 @@ $(document).ready(() => {
     }
   });
 });
+
+function playVideo() {
+  // Esconder o box de interação e mostrar o slide do vídeo
+  $("#box-interaction").removeClass("show");
+  $(".slides").removeClass("show");
+  $("#video-slide").addClass("show");
+
+  // Tentar reproduzir o vídeo
+  const video = document.getElementById("myVideo");
+
+  if (video) {
+    video
+      .play()
+      .then(() => {
+        console.log("Vídeo iniciado com sucesso");
+      })
+      .catch((error) => {
+        console.error("Erro ao reproduzir vídeo:", error);
+        // Se falhar, mostrar mensagem ou tentar novamente
+        alert(
+          "Não foi possível reproduzir o vídeo. Clique no botão play do vídeo."
+        );
+      });
+  } else {
+    console.error("Elemento de vídeo não encontrado");
+  }
+}
